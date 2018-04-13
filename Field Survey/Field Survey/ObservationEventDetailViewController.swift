@@ -28,6 +28,8 @@ class ObservationEventDetailViewController: UIViewController {
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
         
+        self.title = "Observation"
+        
         observationIconImageView.image = observationEvent?.classification.image
         classificationLabel.text = observationEvent?.classification.rawValue
         descriptionLabel.text = observationEvent?.description
