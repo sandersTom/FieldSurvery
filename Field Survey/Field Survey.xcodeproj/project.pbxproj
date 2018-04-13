@@ -11,6 +11,14 @@
 		B348ABFD20813B4B0004A025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B348ABFB20813B4B0004A025 /* Main.storyboard */; };
 		B348ABFF20813B4C0004A025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B348ABFE20813B4C0004A025 /* Assets.xcassets */; };
 		B348AC0220813B4C0004A025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B348AC0020813B4C0004A025 /* LaunchScreen.storyboard */; };
+		B348AC0D20813E950004A025 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = B348AC0C20813E950004A025 /* field_observations.json */; };
+		B348AC0F20813F660004A025 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC0E20813F660004A025 /* Observation.swift */; };
+		B348AC11208141A90004A025 /* ObservationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC10208141A90004A025 /* ObservationEvent.swift */; };
+		B348AC13208145770004A025 /* ObservationEventJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC12208145770004A025 /* ObservationEventJSONParser.swift */; };
+		B348AC152081535C0004A025 /* ObservationEventJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC142081535C0004A025 /* ObservationEventJSONLoader.swift */; };
+		B348AC1720815ABA0004A025 /* ObservationEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC1620815ABA0004A025 /* ObservationEventViewController.swift */; };
+		B348AC1920815B060004A025 /* ObservationEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC1820815B060004A025 /* ObservationEventDetailViewController.swift */; };
+		B348AC1B208161E80004A025 /* ObservationEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348AC1A208161E80004A025 /* ObservationEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		B348ABFE20813B4C0004A025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B348AC0120813B4C0004A025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B348AC0320813B4C0004A025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B348AC0C20813E950004A025 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		B348AC0E20813F660004A025 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		B348AC10208141A90004A025 /* ObservationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEvent.swift; sourceTree = "<group>"; };
+		B348AC12208145770004A025 /* ObservationEventJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEventJSONParser.swift; sourceTree = "<group>"; };
+		B348AC142081535C0004A025 /* ObservationEventJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEventJSONLoader.swift; sourceTree = "<group>"; };
+		B348AC1620815ABA0004A025 /* ObservationEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEventViewController.swift; sourceTree = "<group>"; };
+		B348AC1820815B060004A025 /* ObservationEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEventDetailViewController.swift; sourceTree = "<group>"; };
+		B348AC1A208161E80004A025 /* ObservationEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationEventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,29 @@
 		B348ABF620813B4B0004A025 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				B348AC0920813D6D0004A025 /* Model */,
 				B348ABF720813B4B0004A025 /* AppDelegate.swift */,
 				B348ABFB20813B4B0004A025 /* Main.storyboard */,
 				B348ABFE20813B4C0004A025 /* Assets.xcassets */,
 				B348AC0020813B4C0004A025 /* LaunchScreen.storyboard */,
 				B348AC0320813B4C0004A025 /* Info.plist */,
+				B348AC1620815ABA0004A025 /* ObservationEventViewController.swift */,
+				B348AC1820815B060004A025 /* ObservationEventDetailViewController.swift */,
+				B348AC1A208161E80004A025 /* ObservationEventTableViewCell.swift */,
 			);
 			path = "Field Survey";
+			sourceTree = "<group>";
+		};
+		B348AC0920813D6D0004A025 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B348AC0C20813E950004A025 /* field_observations.json */,
+				B348AC0E20813F660004A025 /* Observation.swift */,
+				B348AC10208141A90004A025 /* ObservationEvent.swift */,
+				B348AC12208145770004A025 /* ObservationEventJSONParser.swift */,
+				B348AC142081535C0004A025 /* ObservationEventJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B348AC0220813B4C0004A025 /* LaunchScreen.storyboard in Resources */,
+				B348AC0D20813E950004A025 /* field_observations.json in Resources */,
 				B348ABFF20813B4C0004A025 /* Assets.xcassets in Resources */,
 				B348ABFD20813B4B0004A025 /* Main.storyboard in Resources */,
 			);
@@ -133,6 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B348ABF820813B4B0004A025 /* AppDelegate.swift in Sources */,
+				B348AC1920815B060004A025 /* ObservationEventDetailViewController.swift in Sources */,
+				B348AC11208141A90004A025 /* ObservationEvent.swift in Sources */,
+				B348AC1720815ABA0004A025 /* ObservationEventViewController.swift in Sources */,
+				B348AC152081535C0004A025 /* ObservationEventJSONLoader.swift in Sources */,
+				B348AC0F20813F660004A025 /* Observation.swift in Sources */,
+				B348AC13208145770004A025 /* ObservationEventJSONParser.swift in Sources */,
+				B348AC1B208161E80004A025 /* ObservationEventTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
